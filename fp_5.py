@@ -112,6 +112,8 @@ dfs_iterative(root)
 # Відображення дерева
 draw_tree(root)
 
+print('\n')
+
 bfs_iterative(root)
 # Відображення дерева
 draw_tree(root)
