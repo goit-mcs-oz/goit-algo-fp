@@ -15,7 +15,7 @@ def monte_carlo_simulation(num_experiments):
 
     print(f'{'Сума':<5} Імовірність')
     for k, v in sum_probability.items():
-        print(f'{k:<5} {round(v, 2)}')
+        print(f'{k:<5} {round(v, 2)}%')
 
 
 monte_carlo_simulation(1000000)
