@@ -4,6 +4,11 @@ import uuid
 import networkx as nx
 import matplotlib.pyplot as plt
 
+'''
+Завдання 4. Візуалізація піраміди
+Використовуючи як базу цей код, побудуйте функцію, що буде візуалізувати бінарну купу.
+'''
+
 
 class Node:
     def __init__(self, key, color="skyblue"):
