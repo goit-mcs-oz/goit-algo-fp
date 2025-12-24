@@ -74,18 +74,14 @@ class LinkedList:
 
 # Функція, яка реалізує реверсування однозв'язного списку, змінюючи посилання між вузлами
     def reverce(self):
-        if not self.head is None:
-            cur = self.head
-            while cur:
-                next = cur.next
-                if cur == self.head:
-                    cur.next = None
-                else:
-                    if cur.next == None:
-                        self.head = cur
-                    cur.next = prev
-                prev = cur
-                cur = next
+        prev = None
+        cur = self.head
+        while cur:
+            next = cur.next
+            cur.next = prev
+            prev = cur
+            cur = next
+        self.head = prev
 
     def insert_by_order_from(self, node, from_node):
         cur = from_node
